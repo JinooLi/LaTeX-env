@@ -1,0 +1,20 @@
+{
+  "name": "latex-env",
+  "build": {
+    "context": ".",
+    "dockerfile": "./Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "runArgs": ["--network", "host"],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mhutchie.git-graph",
+        "streetsidesoftware.code-spell-checker",
+        "James-Yu.latex-workshop"
+      ]
+    }
+  }
+}

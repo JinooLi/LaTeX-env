@@ -1,0 +1,29 @@
+{
+    "[latex]": {
+        "editor.formatOnSave": true
+    },
+    "files.autoSave": "afterDelay",
+    "cSpell.words": [
+        "amsmath",
+        "amssymb",
+        "amsthm",
+        "biber",
+        "biblatex",
+        "booktabs",
+        "chsh",
+        "devcontainers",
+        "hyperref",
+        "latexindent",
+        "latexmk",
+        "libfile",
+        "libyaml",
+        "Lipschitz",
+        "mhutchie",
+        "NOPASSWD",
+        "synctex",
+        "texlive"
+    ],
+    "latex-workshop.latex.outDir": "./out",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.formatting.latex": "latexindent"
+}
