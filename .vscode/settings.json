@@ -25,5 +25,6 @@
     ],
     "latex-workshop.latex.outDir": "./out",
     "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.formatting.latex": "latexindent"
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.latex.recipe.default": "latexmk"
 }
