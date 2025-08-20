@@ -1,13 +1,6 @@
 {
   "name": "latex-env",
-  "build": {
-    "context": ".",
-    "dockerfile": "./Dockerfile"
-  },
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-  },
-  "runArgs": ["--network", "host"],
+  "dockerFile": "Dockerfile",
   "customizations": {
     "vscode": {
       "extensions": [

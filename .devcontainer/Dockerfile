@@ -32,15 +32,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     texlive-publishers \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
-# Set the default username
-ENV USERNAME="latex"
-
-# Create a user 'latex' and add to sudoers group
-RUN useradd -m ${USERNAME} 
-
-# Set default shell of latex user to bash
-RUN chsh -s /bin/bash ${USERNAME}
-
-# Switch to latex user
-USER ${USERNAME}
