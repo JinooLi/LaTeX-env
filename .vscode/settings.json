@@ -1,7 +1,4 @@
 {
-    "[latex]": {
-        "editor.formatOnSave": true
-    },
     "files.autoSave": "afterDelay",
     "cSpell.words": [
         "amsmath",
@@ -23,8 +20,45 @@
         "synctex",
         "texlive"
     ],
+    "[latex]": {
+        "editor.formatOnSave": true
+    },
     "latex-workshop.latex.outDir": "./out",
     "latex-workshop.view.pdf.viewer": "tab",
+    // latexindent를 포맷터로 사용
     "latex-workshop.formatting.latex": "latexindent",
-    "latex-workshop.latex.recipe.default": "latexmk"
+
+    // clean 명령어 정의
+    "latex-workshop.latex.clean.method": "command",
+    "latex-workshop.latex.clean.command": "latexmk",
+    "latex-workshop.latex.clean.args": [
+        "-c",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+    ],
+
+    // xelatex를 기본 빌드 레시피로 사용
+    "latex-workshop.latex.recipe.default": "xelatex",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatexmk"
+            ]
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-xelatex",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ]
+        },
+    ]
 }
