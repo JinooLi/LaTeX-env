@@ -38,25 +38,26 @@
     ],
 
     // xelatex를 기본 빌드 레시피로 사용
-    "latex-workshop.latex.recipe.default": "xelatex",
+    "latex-workshop.latex.recipe.default": "pdflatex",
     "latex-workshop.latex.recipes": [
         {
-            "name": "xelatex",
+            "name": "pdflatex",
             "tools": [
-                "xelatexmk"
+                "pdflatexmk"
             ]
         },
     ],
     "latex-workshop.latex.tools": [
         {
-            "name": "xelatexmk",
+            "name": "pdflatexmk",
             "command": "latexmk",
             "args": [
                 "-synctex=1",
                 "-interaction=nonstopmode",
                 "-file-line-error",
-                "-xelatex",
+                "-pdflatex",
                 "-outdir=%OUTDIR%",
+                "-shell-escape",
                 "%DOC%"
             ]
         },
