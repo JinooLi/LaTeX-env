@@ -3,7 +3,6 @@ FROM ubuntu:22.04
 
 # installing texlive and utils
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    # git은 써야지..??
     git \
     texlive-full \
     && apt-get clean \

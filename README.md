@@ -19,6 +19,12 @@
 6. `Ctrl + shift + P` 를 누르고 `Rebuild and Reopen in Container` 검색 후 `Enter`
 7. .tex 파일과 .bib 파일을 만들고 사용하면 된다. 컴파일 결과는 `out` 디렉토리에 생성된다.
 
+## 다른 방법
+
+1. .devcontainer/Dockerfile 안에 있는 명령어들을 알아서 리눅스에 입력해 직접 설치한다.
+2. devcontainer를 사용하지 않고 로컬에서 바로 vscode를 실행하여 사용한다.
+3. 익스텐션은 알아서 설치한다.
+
 ## 기능들
 1. 자동 포멧팅
 2. 오탈자 지적
