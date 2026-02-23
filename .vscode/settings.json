@@ -23,6 +23,7 @@
     "[latex]": {
         "editor.formatOnSave": true
     },
+    "latex-workshop.latex.rootFile.doNotPrompt": false,
     "latex-workshop.latex.outDir": "./out",
     "latex-workshop.view.pdf.viewer": "tab",
     // latexindent를 포맷터로 사용
