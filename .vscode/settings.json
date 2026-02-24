@@ -28,7 +28,11 @@
     "latex-workshop.view.pdf.viewer": "tab",
     // latexindent를 포맷터로 사용
     "latex-workshop.formatting.latex": "latexindent",
-
+    "latex-workshop.formatting.latexindent.args": [
+        "%TMPDIR%",
+        "-m",
+        "-s"
+    ],
     // clean 명령어 정의
     "latex-workshop.latex.clean.method": "command",
     "latex-workshop.latex.clean.command": "latexmk",
@@ -37,7 +41,6 @@
         "-outdir=%OUTDIR%",
         "%DOC%"
     ],
-
     // xelatex를 기본 빌드 레시피로 사용
     "latex-workshop.latex.recipe.default": "pdflatex",
     "latex-workshop.latex.recipes": [
@@ -46,7 +49,7 @@
             "tools": [
                 "pdflatexmk"
             ]
-        },
+        }
     ],
     "latex-workshop.latex.tools": [
         {
@@ -61,6 +64,6 @@
                 "-shell-escape",
                 "%DOC%"
             ]
-        },
+        }
     ]
 }
