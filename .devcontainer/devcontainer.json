@@ -6,7 +6,8 @@
       "extensions": [
         "mhutchie.git-graph",
         "streetsidesoftware.code-spell-checker",
-        "James-Yu.latex-workshop"
+        "James-Yu.latex-workshop",
+        "Gruntfuggly.todo-tree"
       ]
     }
   }
