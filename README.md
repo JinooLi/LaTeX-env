@@ -1,6 +1,6 @@
 # LaTeX env
 
-vscode로 LaTeX 작업을 위해 세팅한 환경.
+vscode로 LaTeX 작업을 하기 위해 세팅한 환경. `ws` 디렉토리 안에서 작업하면 된다.
 
 ## How to use
 
@@ -22,7 +22,7 @@ vscode로 LaTeX 작업을 위해 세팅한 환경.
 
 1. 맥 안써봐서 모름
 
-### docker(docker desktop)
+### docker(devcontainer)
 
 1. 리눅스 환경(WSL 가능)에서 docker를 설치하여 사용하는 것을 권장. docker를 설치할 때는 터미널에 다음과 같이 입력하면 된다. (Docker desktop 설치는 비추.)
    ```bash
@@ -35,13 +35,15 @@ vscode로 LaTeX 작업을 위해 세팅한 환경.
    `Ctrl + shift + X` 를 누르고 검색창에 Dev Containers를 검색하면 나온다.
 3. 이 환경을 vscode로 연다.
 4. `Ctrl + shift + P` 를 누르고 `Rebuild and Reopen in Container` 검색 후 `Enter`
-5. .tex 파일과 .bib 파일을 \ws 안에 만들고 사용하면 된다. 컴파일 결과는 `out` 디렉토리에 생성된다.
 
 ## 기능들
 
 1. `ctrl+s` 누를 시 자동 포멧팅
 2. 오탈자 지적(익스텐션: code spell checker)
-3. LaTeX Workshop의 여러 기능들..
-   1. 자동 컴파일 지원
-   2. 수식 미리보기 지원
-      등등..
+3. 자동 컴파일
+4. 수식 미리보기
+5. 생성파일과 작업공간 분리
+
+## 팁
+
+`ws` 디렉토리만 구글 드라이브(또는 원드라이브)에 연동시키면 편하다. 생성파일은 `ws` 밖에 `out` 디렉토리에 모두 집어 넣기 때문에 작업하면서 계속 파일들이 지워지고 생기는 것을 걱정하지 않아도 된다.
