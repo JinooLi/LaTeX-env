@@ -1,6 +1,16 @@
 {
   "name": "latex-env",
-  "dockerFile": "Dockerfile",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      // Dockerfile의 ARG와 일치하도록 사용자 이름을 설정
+      "USERNAME": "latex-user"
+    }
+  },
+  // 컨테이너 내부에서 작업을 수행할 일반 사용자 지정
+  "remoteUser": "latex-user",
+  // 컨테이너 사용자 UID를 호스트와 자동으로 맞추는 설정 (기본값 true)
+  "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
       "extensions": [
