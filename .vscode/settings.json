@@ -70,5 +70,18 @@
             ]
         }
     ],
-    "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^|%|\\\\)\\s*($TAGS)\\{*|^\\s*- \\[ \\])",
+    // todo Tree 설정
+    "todo-tree.tree.scanMode": "workspace",
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|%|\\\\|\\})\\s*($TAGS)",
+    "todo-tree.ripgrep.ripgrepArgs": "--no-ignore",
+    "todo-tree.filtering.excludeGlobs": [
+        "**/out/**",
+        "**/.vscode/**",
+    ],
+    "todo-tree.filtering.includeGlobs": [
+        "**/*.tex",
+        "**/*.bib",
+        "**/*.cls",
+        "**/*.sty"
+    ],
 }
